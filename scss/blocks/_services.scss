@@ -51,7 +51,7 @@
 .services__list-wrapper {
   position: relative;
   z-index: 1;
-  // padding-bottom: 65px;
+  padding-bottom: 65px;
 }
 
 .services__list {
@@ -187,7 +187,7 @@
 }
 
 .item-right {
-  right: 0;
+  right: 0.5px;
   background-image: url("../img/list-v-right.png");
 
   @include retina-2x {

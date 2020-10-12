@@ -435,9 +435,9 @@ img {
 }
 
 .container {
-  max-width: 1440px;
-  padding-left: 150px;
-  padding-right: 150px;
+  max-width: 1180px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -571,7 +571,7 @@ img {
 .site-header__nav {
   position: absolute;
   bottom: 0;
-  left: 150px;
+  left: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -813,7 +813,7 @@ img {
 .appointment__form {
   position: absolute;
   z-index: 1;
-  right: 150px;
+  right: 20px;
   bottom: 0;
   padding: 20px 33px;
   width: 540px;
@@ -936,6 +936,7 @@ img {
 .services__list-wrapper {
   position: relative;
   z-index: 1;
+  padding-bottom: 65px;
 }
 
 .services__list {
@@ -1093,7 +1094,7 @@ img {
 }
 
 .item-right {
-  right: 0;
+  right: 0.5px;
   background-image: url("../img/list-v-right.png");
 }
 
@@ -1104,7 +1105,8 @@ img {
 }
 
 .modern-tech__container {
-  padding-left: 0;
+  max-width: 1440px;
+  padding: 0;
 }
 
 .modern-tech__wrapper {
@@ -1115,11 +1117,13 @@ img {
 
 .modern-tech__wrapper img {
   display: block;
+  width: 640px;
+  height: 524px;
 }
 
 .modern-tech__text-wrapper {
   width: 100%;
-  max-width: 800px;
+  max-width: 790px;
   padding-left: 40px;
 }
 /*# sourceMappingURL=main.css.map */
