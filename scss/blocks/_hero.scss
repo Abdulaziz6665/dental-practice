@@ -1,0 +1,14 @@
+.hero {
+  padding-top: 310px;
+  padding-bottom: 147px;
+  background-image: url("../img/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  @include retina-2x {
+    & {
+      background-image: url("../img/hero-bg@2x.jpg");
+    }
+  }
+}
