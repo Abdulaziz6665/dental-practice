@@ -1,0 +1,178 @@
+.site-header {
+  position: fixed;
+  z-index: 14;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+.site-header__container {
+  position: relative;
+  z-index: 15;
+  min-height: 120px;
+}
+
+.contact-us__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  padding: 10px 0;
+  list-style-type: none;
+}
+
+.contact-us__item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 199px;
+  font-size: 14px;
+  line-height: 17px;
+  
+  span {
+    display: block;
+    font-weight: 500;
+  }
+  
+  a {
+    color: #272727;
+    font-weight: 300;
+    text-decoration: none;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+  
+  p {
+    margin: 0;
+    font-weight: 300;
+  }
+}
+
+.before-phone::before,
+.before-clock::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 7px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.before-phone::before {
+  background-image: url("../img/icon-phone.png");
+  
+  @include retina-2x {
+    &::before {
+      background-image: url("../img/icon-phone@2x.png");
+    }
+  }
+}
+  
+.before-clock::before {
+  background-image: url("../img/icon-clock.png");
+
+  @include retina-2x {
+    &::before {
+      background-image: url("../img/icon-clock@2x.png");
+    }
+  }
+}
+
+.item-logo {
+  justify-content: center;
+
+  a {
+    display: block;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+
+  img {
+    display: inline-block;
+  }
+}
+
+.open-now-green {
+  color: #00B007;
+}
+
+.site-header__nav {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  display: flex;
+  width: 1140px;
+  padding: 0 28px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #0055B8;
+  transform: translateY(50%);
+}
+
+.nav__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav__list-item {
+  margin-right: 35px;
+  
+  a {
+    display: block;
+    padding: 24px 0;
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+      color: #FFD600;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}
+
+.site-header__social-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+
+  a {
+    display: block;
+  }
+
+  a + a {
+    margin-left: 13px;
+  }
+
+  img {
+    display: block;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}

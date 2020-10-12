@@ -415,6 +415,7 @@ body {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
+  margin-top: 120px;
   background-color: #ccc;
 }
 
@@ -440,5 +441,205 @@ img {
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.site-header {
+  position: fixed;
+  z-index: 14;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+.site-header__container {
+  position: relative;
+  z-index: 15;
+  min-height: 120px;
+}
+
+.contact-us__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  padding: 10px 0;
+  list-style-type: none;
+}
+
+.contact-us__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 199px;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.contact-us__item span {
+  display: block;
+  font-weight: 500;
+}
+
+.contact-us__item a {
+  color: #272727;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.contact-us__item a:hover {
+  opacity: 0.8;
+}
+
+.contact-us__item a:active {
+  opacity: 0.6;
+}
+
+.contact-us__item p {
+  margin: 0;
+  font-weight: 300;
+}
+
+.before-phone::before,
+.before-clock::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 7px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.before-phone::before {
+  background-image: url("../img/icon-phone.png");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .before-phone::before::before {
+    background-image: url("../img/icon-phone@2x.png");
+  }
+}
+
+.before-clock::before {
+  background-image: url("../img/icon-clock.png");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .before-clock::before::before {
+    background-image: url("../img/icon-clock@2x.png");
+  }
+}
+
+.item-logo {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.item-logo a {
+  display: block;
+}
+
+.item-logo a:hover {
+  opacity: 0.8;
+}
+
+.item-logo a:active {
+  opacity: 0.6;
+}
+
+.item-logo img {
+  display: inline-block;
+}
+
+.open-now-green {
+  color: #00B007;
+}
+
+.site-header__nav {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1140px;
+  padding: 0 28px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #0055B8;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav__list-item {
+  margin-right: 35px;
+}
+
+.nav__list-item a {
+  display: block;
+  padding: 24px 0;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav__list-item a:hover {
+  color: #FFD600;
+}
+
+.nav__list-item a:active {
+  opacity: 0.6;
+}
+
+.site-header__social-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+}
+
+.site-header__social-wrapper a {
+  display: block;
+}
+
+.site-header__social-wrapper a + a {
+  margin-left: 13px;
+}
+
+.site-header__social-wrapper img {
+  display: block;
+}
+
+.site-header__social-wrapper img:hover {
+  opacity: 0.8;
+}
+
+.site-header__social-wrapper img:active {
+  opacity: 0.6;
 }
 /*# sourceMappingURL=main.css.map */
