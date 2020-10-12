@@ -905,7 +905,7 @@ img {
   }
 }
 
-.services__text::before {
+.triangle::before {
   content: "";
   position: absolute;
   z-index: 1;
