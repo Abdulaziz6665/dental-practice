@@ -1,4 +1,6 @@
 .appointment__container {
+  position: relative;
+  z-index: 1;
   display: flex;
 }
 
@@ -55,9 +57,14 @@
 }
 
 .appointment__form {
+  position: absolute;
+  z-index: 1;
+  right: 20px;
+  bottom: 0;
   padding: 20px 33px;
   width: 540px;
   min-height: 359px;
+  border-radius: 5px;
   color: #fff;
   background-color: $blue;
 
