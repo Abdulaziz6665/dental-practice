@@ -1,0 +1,17 @@
+.modern-tech__container {
+  padding-left: 0;
+}
+.modern-tech__wrapper {
+  display: flex;
+  // flex-wrap: wrap;
+
+  img {
+    display: block;
+  }
+}
+
+.modern-tech__text-wrapper {
+  width: 100%;
+  max-width: 800px;
+  padding-left: 40px;
+}

@@ -435,9 +435,9 @@ img {
 }
 
 .container {
-  max-width: 1180px;
-  padding-left: 20px;
-  padding-right: 20px;
+  max-width: 1440px;
+  padding-left: 150px;
+  padding-right: 150px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -571,7 +571,7 @@ img {
 .site-header__nav {
   position: absolute;
   bottom: 0;
-  left: 20px;
+  left: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -813,7 +813,7 @@ img {
 .appointment__form {
   position: absolute;
   z-index: 1;
-  right: 20px;
+  right: 150px;
   bottom: 0;
   padding: 20px 33px;
   width: 540px;
@@ -1101,5 +1101,25 @@ img {
   .item-right {
     background-image: url("../img/list-v-right@2x.png");
   }
+}
+
+.modern-tech__container {
+  padding-left: 0;
+}
+
+.modern-tech__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modern-tech__wrapper img {
+  display: block;
+}
+
+.modern-tech__text-wrapper {
+  width: 100%;
+  max-width: 800px;
+  padding-left: 40px;
 }
 /*# sourceMappingURL=main.css.map */
