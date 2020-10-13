@@ -4,7 +4,7 @@
 }
 .modern-tech__wrapper {
   display: flex;
-
+  
   img {
     display: block;
     width: 640px;
@@ -16,4 +16,25 @@
   width: 100%;
   max-width: 790px;
   padding-left: 40px;
+  padding-top: 38px;
+  
+  h2 {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    margin-bottom: 15px;
+    padding-top: 16px;
+    color: #272727;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+
+    &::before {
+      left: 25px;
+    }
+  }
+  
+  p {
+    margin: 0;
+  }
 }
