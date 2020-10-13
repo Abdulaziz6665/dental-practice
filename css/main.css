@@ -416,7 +416,6 @@ body {
   font-size: 16px;
   line-height: 1.5;
   margin-top: 120px;
-  height: 6000px;
 }
 
 img {
@@ -1492,5 +1491,42 @@ img {
 
 .place-location__title-wrapper h2 {
   padding-top: 20px;
+}
+
+.map {
+  padding: 150px 0;
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .map {
+    background-image: url("../img/map@2x.jpg");
+  }
+}
+
+.place-location__form {
+  position: relative;
+  z-index: 1;
+  left: 0;
+}
+
+.place-location__form::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: -600px;
+  width: 277px;
+  height: 81px;
+  background-image: url("../img/location-place.png");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .place-location__form::after {
+    background-image: url("../img/location-place@2x.png");
+  }
 }
 /*# sourceMappingURL=main.css.map */

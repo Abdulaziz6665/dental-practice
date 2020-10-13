@@ -1,0 +1,32 @@
+.map {
+  padding: 150px 0;
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @include retina-2x {
+    background-image: url("../img/map@2x.jpg");
+  }
+}
+
+.place-location__form {
+  position: relative;
+  z-index: 1;
+  left: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: -600px;
+    width: 277px;
+    height: 81px;
+    background-image: url("../img/location-place.png");
+
+    @include retina-2x {
+      background-image: url("../img/location-place@2x.png");
+    }
+  }
+}
