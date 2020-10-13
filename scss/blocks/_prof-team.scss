@@ -17,7 +17,8 @@
 
 .list__doctors {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -28,7 +29,8 @@
 }
 
 .doctors__item {
-  width: 300px;
+  max-width: 300px;
+  margin: 15px;
 
   img {
     display: block;
@@ -56,4 +58,27 @@
 
 .prof-team__btn {
   transform: translateY(-100%);
+}
+
+@include breakpoint-down (1130px) {
+  .prof-team__btn {
+    display: none;
+  }
+}
+
+@include breakpoint-down (1040px) {
+  .list__doctors {
+    width: 86.84%;
+    overflow: hidden;
+  }
+  
+  .prof-team__btn {
+    display: none;
+  }
+}
+
+@include breakpoint-down (790px) {
+  .doctors__item {
+    width: 100%; 
+  }
 }

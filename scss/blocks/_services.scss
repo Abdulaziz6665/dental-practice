@@ -57,7 +57,7 @@
 .services__list {
   display: flex;
   justify-content: space-between;
-  max-width: 990px;
+  max-width: 86.84%;
   margin: 0;
   margin-right: auto;
   margin-left: auto;
@@ -124,6 +124,10 @@
     font-weight: 500;
     color: #0A60C3;
   }
+}
+
+.service-item:first-child {
+  margin-left: 5px;
 }
 
 .dental::before {
@@ -209,3 +213,5 @@
     background-image: url("../img/list-v-right@2x.png");
   }
 }
+
+// ==============640==============

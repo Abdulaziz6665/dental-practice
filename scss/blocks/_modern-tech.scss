@@ -109,3 +109,36 @@
     background-image: url("../img/location@2x.png");
   }
 }
+
+@include breakpoint-down (1040px) {
+  .modern-tech__container {
+    padding-left: 20px;
+  }
+
+  .modern-tech__wrapper {
+    display: block;
+
+    img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
+  }
+
+  .modern-tech__text-wrapper {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0;
+  }
+}
+
+@include breakpoint-down (800px) {
+  .modern-tech__wrapper {
+
+    img {
+      height: 400px;
+    }
+  }
+}
+
+// ==========650==========

@@ -11,7 +11,7 @@
   flex-direction: column;
   align-items: center;
   padding: 35px 40px 32px 40px;
-  width: 300px;
+  max-width: 300px;
   min-height: 300px;
   color: #272727;
   border-radius: 5px;
@@ -142,14 +142,23 @@
 @include breakpoint-down (1180px) {
   .appointment__container {
     padding: 0;
+    flex-wrap: wrap;
   }
 
   .appointment-box {
-    width: 100%;
-    max-width: 320px;
+    max-width: 50%;
   }
 
-  .appointment__form {
-    right: 0;
+  .form-100 {
+    position: static;
+    width: 100%;
   }
 }
+
+@include breakpoint-down (490px) {
+  .appointment-box {
+    display: none;
+  }
+}
+
+// ============560============

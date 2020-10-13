@@ -67,3 +67,35 @@
     @include hover-active
   }
 }
+
+@include breakpoint-down (1180px) {
+  .quality-service__container {
+    padding-right: 20px;
+  }
+
+  .quality-service__wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .quality-service__text-wrapper {
+    width: 100%;
+    max-width: 100%;
+    padding-top: 38px;
+    padding-right: 0;
+
+    h2::before {
+      left: 0;
+    }
+  }
+
+  .quality-service__wrapper .doctor-2 {
+    width: 100%;
+    height: 500px;
+  }
+}
+
+@include breakpoint-down (800px) {
+  .quality-service__wrapper .doctor-2 {
+    height: 400px;
+  }
+}

@@ -85,3 +85,10 @@
   height: 70px;
   margin-left: 9px;
 }
+
+@include breakpoint-down (760px) {
+  .hero.hero {
+    padding-top: 200px;
+    padding-bottom: 75px;
+  }
+}
