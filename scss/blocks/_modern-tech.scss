@@ -85,13 +85,27 @@
 
 .expert::before {
   background-image: url("../img/expert.png");
+
+  @include retina-2x {
+    & {
+      background-image: url("../img/expert@2x.png");
+    }
+  }
 }
 
 .modern-tech::before {
   background-image: url("../img/modern-tech.png");
+
+  @include retina-2x {
+    background-image: url("../img/modern-tech@2x.png");
+  }
 }
 
 .location::before {
   background-image: url("../img/location.png");
   background-size: 90%;
+
+  @include retina-2x {
+    background-image: url("../img/location@2x.png");
+  }
 }

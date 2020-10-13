@@ -843,6 +843,11 @@ img {
   color: #fff;
 }
 
+.appointment__form input:focus {
+  color: #272727;
+  background-color: #fff;
+}
+
 .appointment__form button {
   background: none;
   border: none;
@@ -854,6 +859,14 @@ img {
   font-size: 18px;
   line-height: 21px;
   cursor: pointer;
+}
+
+.appointment__form button:hover {
+  opacity: 0.8;
+}
+
+.appointment__form button:active {
+  opacity: 0.6;
 }
 
 .form__label {
@@ -1079,13 +1092,26 @@ img {
   height: 49px;
   background: none;
   border: none;
+  border-radius: 5px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   cursor: pointer;
 }
 
+.services__btn:hover {
+  -webkit-box-shadow: 0 2px 5px 2px #ccc;
+          box-shadow: 0 2px 5px 2px #ccc;
+}
+
+.services__btn:active {
+  opacity: 0.6;
+}
+
 .item-left {
   background-image: url("../img/list-v-left.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
@@ -1097,6 +1123,9 @@ img {
 .item-right {
   right: 0.5px;
   background-image: url("../img/list-v-right.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
@@ -1200,13 +1229,31 @@ img {
   background-image: url("../img/expert.png");
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .expert::before {
+    background-image: url("../img/expert@2x.png");
+  }
+}
+
 .modern-tech::before {
   background-image: url("../img/modern-tech.png");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .modern-tech::before {
+    background-image: url("../img/modern-tech@2x.png");
+  }
 }
 
 .location::before {
   background-image: url("../img/location.png");
   background-size: 90%;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .location::before {
+    background-image: url("../img/location@2x.png");
+  }
 }
 
 .prof-team__title-wrapper {
@@ -1223,6 +1270,7 @@ img {
 .prof-team__list-wrapper {
   position: relative;
   z-index: 1;
+  margin-bottom: 65px;
 }
 
 .list__doctors {
@@ -1271,5 +1319,87 @@ img {
 .prof-team__btn {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
+}
+
+.quality-service__container {
+  max-width: 1440px;
+  padding: 0;
+}
+
+.quality-service__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.quality-service__wrapper img {
+  display: block;
+  width: 640px;
+  height: 621px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.quality-service__text-wrapper {
+  width: 100%;
+  max-width: 790px;
+  padding-right: 40px;
+  padding-top: 100px;
+}
+
+.quality-service__text-wrapper h2 {
+  position: relative;
+  z-index: 1;
+  padding-top: 20px;
+  margin-bottom: 34px;
+}
+
+.quality-service__text-wrapper h2::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #FFD600;
+}
+
+.quality-service__text-wrapper p {
+  margin-bottom: 34px;
+}
+
+.quality-service__sign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.quality-service__sign img {
+  width: 85px;
+  height: 70px;
+}
+
+.quality-service__sign a {
+  display: block;
+  padding: 25px 85px;
+  margin-left: 36px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #0055B8;
+  font-size: 18px;
+  line-height: 21px;
+  text-decoration: none;
+}
+
+.quality-service__sign a:hover {
+  opacity: 0.8;
+}
+
+.quality-service__sign a:active {
+  opacity: 0.6;
 }
 /*# sourceMappingURL=main.css.map */
