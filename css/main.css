@@ -416,6 +416,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   margin-top: 120px;
+  height: 4000px;
 }
 
 img {
@@ -1118,7 +1119,9 @@ img {
 .modern-tech__wrapper img {
   display: block;
   width: 640px;
-  height: 524px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .modern-tech__text-wrapper {
@@ -1133,7 +1136,7 @@ img {
   z-index: 1;
   margin: 0;
   margin-bottom: 15px;
-  padding-top: 16px;
+  padding-top: 20px;
   color: #272727;
   font-weight: 500;
   font-size: 36px;
@@ -1146,5 +1149,62 @@ img {
 
 .modern-tech__text-wrapper p {
   margin: 0;
+  margin-bottom: 27px;
+}
+
+.modern-tech__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.modern-tech__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modern-tech__item h3 {
+  margin: 0;
+  margin-bottom: 5px;
+  color: #000;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.modern-tech__item p {
+  margin: 0;
+  margin-bottom: 18px;
+  width: 490px;
+  color: #4d4d4d;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.modern-tech__item::before {
+  content: "";
+  display: block;
+  margin-right: 20px;
+  width: 100%;
+  max-width: 72px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+}
+
+.expert::before {
+  background-image: url("../img/expert.png");
+}
+
+.modern-tech::before {
+  background-image: url("../img/modern-tech.png");
+}
+
+.location::before {
+  background-image: url("../img/location.png");
+  background-size: 90%;
 }
 /*# sourceMappingURL=main.css.map */
