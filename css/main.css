@@ -1114,6 +1114,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 86px;
 }
 
 .modern-tech__wrapper img {
@@ -1206,5 +1207,69 @@ img {
 .location::before {
   background-image: url("../img/location.png");
   background-size: 90%;
+}
+
+.prof-team__title-wrapper {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 930px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.prof-team__list-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.list__doctors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 990px;
+  margin-left: auto;
+  margin-right: auto;
+  list-style-type: none;
+}
+
+.doctors__item {
+  width: 300px;
+}
+
+.doctors__item img {
+  display: block;
+  width: 300px;
+  height: auto;
+}
+
+.doctors__item span {
+  display: block;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  text-transform: capitalize;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 500;
+}
+
+.doctors__item p {
+  margin: 0;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.prof-team__btn {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 /*# sourceMappingURL=main.css.map */
