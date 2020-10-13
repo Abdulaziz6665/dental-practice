@@ -24,6 +24,9 @@
     width: 277px;
     height: 81px;
     background-image: url("../img/location-place.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
 
     @include retina-2x {
       background-image: url("../img/location-place@2x.png");
