@@ -84,11 +84,11 @@
         for every day</h1>
         <a href="#">Get</a>
         <span class="text-wrapper__btn">
-          <button class="btn__vector-left" type="button">
-            <img src="img/vector-left.png" alt="arrow" srcset="img/vector-left.png 1x, img/vector-left@2x.png 2x" width="14" height="24">
+          <button class="btn__vector-left" type="button" aria-label="button-slide turn left">
+            <img src="img/vector-left.png" alt="arrow" srcset="img/vector-left.png 1x, img/vector-left@2x.png 2x" width="14" height="24" aria-hidden="true">
           </button>
-          <button class="btn__vector-right" type="button">
-            <img src="img/vector-right.png" alt="arrow" srcset="img/vector-right.png 1x, img/vector-right@2x.png 2x" width="25" height="24">
+          <button class="btn__vector-right" type="button" aria-label="button-slide turn right">
+            <img src="img/vector-right.png" alt="arrow" srcset="img/vector-right.png 1x, img/vector-right@2x.png 2x" width="25" height="24" aria-hidden="true">
           </button>
         </span>
       </div>
@@ -109,18 +109,18 @@
       </div>
       <form class="appointment__form" action="https://echo.htmlacademy.ru" method="POST">
         <h2>Appointment</h2>
-        <label>
-          <input type="text" placeholder="Name" name="Name" required>
+        <label aria-label="name">
+          <input type="text" placeholder="Name" name="Name" aria-hidden="true" required>
         </label>
-        <label>
-          <input type="tel" placeholder="Phone" name="Phone" required>
+        <label aria-label="phone number">
+          <input type="tel" placeholder="Phone" name="Phone" aria-hidden="true" required>
         </label>
         <button type="submit">Appointment</button>
         <label class="form__label">
           <span class="form__label-text">I give my consent to the storage
           and processing of personal data</span>
-          <input class="form__label-input visually-hidden" type="checkbox" checked required>
-          <span class="form__label-span"></span>
+          <input class="form__label-input visually-hidden" type="checkbox" checked aria-hidden="true" required>
+          <span class="form__label-span" aria-hidden="true"></span>
         </label>
       </form>
     </div>
@@ -166,14 +166,15 @@
             <span>3100₽</span>
           </li>
         </ul>
-        <button class="services__btn item-left" type="button"></button>
-        <button class="services__btn item-right" type="button"></button>
+        <button class="services__btn item-left" type="button" aria-label="slide turn left"></button>
+        <button class="services__btn item-right" type="button" aria-label="slide turn right"></button>
       </div>
     </div>
   </section>
 
 
   <section class="modern-tech">
+    <h2 class="visually-hidden">Modern technology and expert-class dentists</h2>
     <div class="modern-tech__container container">
       <div class="modern-tech__wrapper">
         <img src="img/child-dantict.jpg" alt="child dantist" srcset="img/child-dantict.jpg 1x, img/child-dantict@2x.jpg 2x" width="640" height="617">
@@ -220,25 +221,25 @@
       <div class="prof-team__list-wrapper list">
         <ul class="list__doctors doctors">
           <li class="doctors__item">
-            <img src="img/anna.jpg" alt="image Anna" srcset="img/anna.jpg 1x, img/anna@2x.jpg 2x" width="300" height="350">
+            <img src="img/anna.jpg" alt="" srcset="img/anna.jpg 1x, img/anna@2x.jpg 2x" width="300" height="350">
             <span>Anna Petrova</span>
             <p>Expert-class dentist</p>
           </li>
 
           <li class="doctors__item">
-            <img src="img/ivan.jpg" alt="image ivan" srcset="img/ivan.jpg 1x, img/ivan@2x.jpg 2x" width="300" height="350">
+            <img src="img/ivan.jpg" alt="" srcset="img/ivan.jpg 1x, img/ivan@2x.jpg 2x" width="300" height="350">
             <span>Ivan Ivanov</span>
             <p>Expert-class dentist</p>
           </li>
 
           <li class="doctors__item">
-            <img src="img/larisa.jpg" alt="image larisa" srcset="img/larisa.jpg 1x, img/larisa@2x.jpg 2x" width="300" height="350">
+            <img src="img/larisa.jpg" alt="" srcset="img/larisa.jpg 1x, img/larisa@2x.jpg 2x" width="300" height="350">
             <span>Larisa Vasileva</span>
             <p>Expert-class dentist</p>
           </li>
         </ul>
-        <button class="prof-team__btn services__btn item-left" type="button"></button>
-        <button class="prof-team__btn services__btn item-right" type="button"></button>
+        <button class="prof-team__btn services__btn item-left" type="button" aria-label="slide turn left"></button>
+        <button class="prof-team__btn services__btn item-right" type="button" aria-label="slide turn right"></button>
       </div>
     </div>
   </section>
@@ -254,7 +255,7 @@
 
           <div class="quality-service__sign">
             <img src="img/sign.png" alt="sign prof doctor" srcset="img/sign.png 1x, img/sign@2x.png 2x" width="85" height="70">
-            <a href="#">Learn more</a>
+            <a href="#" aria-label="link">Learn more</a>
           </div>
         </div>
         <img src="img/child-doctor2.jpg" alt="children doctor sitting" srcset="img/child-doctor2.jpg 1x, img/child-doctor2@2x.jpg 2x" width="640" height="621">
@@ -309,18 +310,17 @@
   <section class="map">
     <h2 class="visually-hidden">Location map</h2>
     <div class="container">
-      <form class="appointment__form place-location__form" action="https://echo.htmlacademy.ru" method="POST">
+      <form class="place-location__form appointment__form" action="https://echo.htmlacademy.ru" method="POST">
         <h2>Appointment</h2>
-        <label>
-          <input type="text" placeholder="Name" name="Name" required>
+        <label aria-level="name">
+          <input type="text" placeholder="Name" name="Name" aria-hidden="true" required>
         </label>
-        <label>
-          <input type="tel" placeholder="Phone" name="Phone" required>
+        <label aria-level="phone number">
+          <input type="tel" placeholder="Phone" name="Phone" aria-hidden="true" required>
         </label>
         <button type="submit">Appointment</button>
         <label class="form__label">
-          <span class="form__label-text">I give my consent to the storage
-            and processing of personal data</span>
+          <span class="form__label-text">I give my consent to the storage and processing of personal data</span>
           <input class="form__label-input visually-hidden" type="checkbox" checked required>
           <span class="form__label-span"></span>
         </label>
