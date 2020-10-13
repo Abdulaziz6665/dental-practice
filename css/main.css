@@ -1480,4 +1480,17 @@ img {
 .patients__link-feedback:active {
   opacity: 0.6;
 }
+
+.place-location__title-wrapper {
+  position: relative;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  width: 880px;
+  text-align: center;
+}
+
+.place-location__title-wrapper h2 {
+  padding-top: 20px;
+}
 /*# sourceMappingURL=main.css.map */
