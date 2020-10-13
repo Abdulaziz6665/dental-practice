@@ -1,0 +1,72 @@
+.patients__container {
+  margin-bottom: 65px;
+}
+
+.patients__title-wrapper {
+  position: relative;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  width: 483px;
+  text-align: center;
+
+  h2 {
+    padding-top: 20px;
+  }
+}
+
+.patients__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.patients__list-item {
+  width: 354px;
+
+  img {
+    display: block;
+    margin-bottom: 31px;
+    width: 354px;
+    height: 240px;
+  }
+
+  span {
+    display: block;
+    margin-bottom: 13px;
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 30px;
+    color: #4d4d4d;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+.patients__link-wrapper {
+  display: block;
+  text-align: center;
+}
+
+.patients__link-feedback {
+  display: inline-block;
+  padding: 25px 75px;
+  color: #4d4d4d;
+  border: 2px solid $blue;
+  border-radius: 5px;
+  text-decoration: none;
+
+  &:hover {
+    color: #fff;
+    background-color: $blue;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
