@@ -102,15 +102,19 @@
 
 .site-header__nav {
   position: absolute;
+  // left: 20px;
   bottom: 0;
-  left: 20px;
-  display: flex;
+  // width: 100%;
   width: 1140px;
-  padding: 0 28px;
   border-radius: 5px;
   color: #fff;
   background-color: $blue;
   transform: translateY(50%);
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav__list {
@@ -140,7 +144,6 @@
 .site-header__social-wrapper {
   display: flex;
   align-items: center;
-  margin-left: auto;
 
   a {
     display: block;
@@ -159,7 +162,7 @@
 
 @include breakpoint-down (1180px) {
   body {
-    margin-top: 0;
+    margin-top: 72px;
   }
   
   .site-header__container {
@@ -171,11 +174,13 @@
     display: none;
   }
 
-  .site-header__nav .site-header__nav {
+  .site-header .site-header__nav{
     position: fixed;
     top: 0;
     left: 0;
+    bottom: auto;
     width: 100%;
+    border-radius: 0;
     transform: none;
   }
 }

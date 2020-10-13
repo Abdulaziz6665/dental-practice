@@ -138,3 +138,18 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
+@include breakpoint-down (1180px) {
+  .appointment__container {
+    padding: 0;
+  }
+
+  .appointment-box {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .appointment__form {
+    right: 0;
+  }
+}
